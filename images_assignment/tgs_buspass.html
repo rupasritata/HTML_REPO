@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buspass</title>
+</head>
+<body>
+    <center>
+        <img src="./application.jpeg" alt="application" width="48%">
+    </center>
+    <center>
+    <fieldset style="width:500px;">
+        <legend>
+          <b>  Applicant Details</b>
+        </legend>
+        <table>
+            <table cellpadding="10" width="70%">
+                <tr>
+                    <td><label for="firstname">Name:</label></td>
+                    <td><input type="text" id="firstname" name="Firstname" required></td>
+                    <td><label for="fathername">FatherName:</label></td>
+                    <td><input type="text" id="fathername" name="Fathername" required></td>
+                </tr>
+                <tr>
+                    <td> <label for="Date">Date :</label></td>
+                    <td><input type="date" id="Date" required></td>
+                    <td> <label for="male"> Gender:</label></td>
+                    <td> <label for="male"> Male</label>
+                        <input type="radio" id="male" value="Male" name="gender" required> 
+                         <label for="female">Female</label>
+                         <input type="radio" id="female" value="Female" name="gender" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age as no:</label></td>
+                    <td><input type="text" name="Age" id="age" required></td>
+                    <td><label for="aadhar">Aadhar no: </label></td>
+                    <td><input type="text" id="aadhar" name="aadhar" minlength="12" maxlength="12"></td>
+                </tr>
+                <tr>
+                    <td><label for="Whatsapp no">WhatsApp no:</label></td>
+                    <td> <input type="text" name="Whatsapp" id="Whatsapp no" minlength="10" maxlength="10" required></td>
+                    <td> <label for="email">Email:</label></td>
+                    <td> <input type="email" id="email" name="email" required ></td>
+                </tr>
+                <tr>
+                    <td> <label for=" Photo">Photo :</label></td>
+                    <td><input type="file" id="Photo" name="photo" required></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </table>
+    </fieldset><br>
+    <fieldset style="width:650px;">
+        <legend><b>Residential Address Details</b></legend>
+        <table cellpadding="20" >
+            <tr>
+                <td><label for="Address">Applicant Address:</label></td>
+                <td><textarea id="Address" name="address" rows="3" cols="20"></textarea></td>
+                <td></td>
+                <td><label for="District">District:</label></td>
+                <td><select id ="Dropdown" name="options">
+                    <option value="one"> Hyderabad </option>
+                </select><td>
+            </tr>
+            <tr>
+                <td><label for="Mandal">Mandal:</label></td>
+                <td><select id ="Dropdown" name="options">
+                    <option value="one"> Hyderabad </option></select><td>
+                <td><label for="Village">Village:</label></td>
+                <td><select id ="Dropdown" name="options">
+                    <option value> Hyderabad </option></select><td>
+                
+            </tr>
+            <tr>
+                <td><label for="code">Pincode:</label></td>
+                <td><input type="text" id="code" name="Pincode"></td>
+            </tr>
+        </table>
+    </fieldset><br>
+    <fieldset style="width:650px;">
+        <legend><b>Pass Type Details</b></legend>
+        <table   cellpadding="10" cellspacing="20"  >
+            <pre>
+            <tr > 
+                <td><label for="Dropdown">City:</label></td>
+                <td><select id ="Dropdown" name="options">
+                    <option value>Hyderabad</option></select><td>  
+                        <td></td>  
+                        <td></td>
+                       
+                         <td><label for="Dropdown">Pass Type:</label></td>
+                 <td><select id ="Dropdown" name="options">
+                    <option value> ---Select---</option>
+                    <option value>Greater Pass</option>
+                    <option value>Ordinary  Pass</option>
+                    <option value>Metro Pass</option>
+                </select><td>  
+            </tr></pre> 
+        </table>
+    </fieldset><br><br>
+    <img src="./captcha.jpeg"><br><br>
+    <input type="text"><br><br>
+    <input type="submit"
+    </center>
+</body>
+</html>
