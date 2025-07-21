@@ -60,22 +60,22 @@
                 <td><textarea id="Address" name="address" rows="3" cols="20"></textarea></td>
                 <td></td>
                 <td><label for="District">District:</label></td>
-                <td><select id ="Dropdown" name="options">
+                <td><select id ="Dropdown" name="options" required>
                     <option value="one"> Hyderabad </option>
                 </select><td>
             </tr>
             <tr>
                 <td><label for="Mandal">Mandal:</label></td>
-                <td><select id ="Dropdown" name="options">
+                <td><select id ="Dropdown" name="options" required>
                     <option value="one"> Hyderabad </option></select><td>
                 <td><label for="Village">Village:</label></td>
-                <td><select id ="Dropdown" name="options">
+                <td><select id ="Dropdown" name="options" required>
                     <option value> Hyderabad </option></select><td>
                 
             </tr>
             <tr>
                 <td><label for="code">Pincode:</label></td>
-                <td><input type="text" id="code" name="Pincode"></td>
+                <td><input type="text" id="code" name="Pincode" required></td>
             </tr>
         </table>
     </fieldset><br>
@@ -100,6 +100,34 @@
             </tr></pre> 
         </table>
     </fieldset><br><br>
+    <fieldset style="width: 650px;">
+        <legend><b>Mode of Payment and Pass Collection</b></legend>
+        <table cellpadding="20">
+            <tr>
+                <td><label for="Payment Mode">Payment Mode:</label></td>
+                 <td><select id ="Dropdown" name="options" required>
+                    <option value>Select Payment Mode</option>
+                    <option value>Payment at counter</option>
+                </select><td>  
+            </tr>
+            <tr>
+                <td><label for="Pass Delivery Mode">Pass Delivery Mode:</label></td>
+                 <td><select id ="Dropdown" name="options">
+                    <option value>Select Pass Delivery  Mode</option>
+                    <option value>At counter</option>
+                </select><td>  
+            </tr>
+            <tr>
+                <td><label for="collect pass"> Center at which you want to collect the pass:</label></td>
+                 <td><select id ="Dropdown" name="options">
+                    <option value>---Select---</option>
+                    <option value>RTC KPHB -- Hyderabad[22-07-25]</option>
+                    <option value>RTC Koti -- Hyderabad[22-07-25</option>
+                </select><td>  
+            </tr>
+        </table>
+    </fieldset>
+
     <img src="./captcha.jpeg"><br><br>
     <input type="text"><br><br>
     <input type="submit"
